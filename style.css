@@ -1,0 +1,245 @@
+/* =========================================== */
+/* === ESTILO DO CABEÇALHO (HERO SECTION) === */
+/* =========================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: sans-serif; /* Cor padrão para o texto */
+}
+/* O container principal com a imagem de fundo */
+.hero-section {
+  /* Substitua pelo caminho correto da sua imagem de fundo */
+  background-image: url("img/banner-topo.jpg");
+  background-size: cover; /* Faz a imagem cobrir todo o espaço */
+  background-position: center; /* Centraliza a imagem */
+  height: 100vh; /* Ocupa 100% da altura da tela */
+
+  /* Centraliza a caixa de conteúdo (.hero-content) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Define como ponto de referência para a logo */
+  position: relative;
+  color: #3c184e; /* Define uma cor padrão para os textos */
+}
+
+/* A caixa de conteúdo branca e semi-transparente */
+.hero-content {
+  /* COR BRANCA COM 85% DE OPACIDADE */
+  background-color: rgba(255, 255, 255, 0.85);
+  width: 80%; /* Largura de 80% da tela */
+  padding: 40px 60px;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 800px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo do título principal */
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+/* Estilo do botão "Fale Conosco" */
+.hero-content .cta-button {
+  background-color: #3c184e; /* Roxo escuro */
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: transform 0.2s ease;
+  display: inline-block; /* Garante que o botão se comporte corretamente */
+}
+
+.hero-content .cta-button:hover {
+  transform: scale(1.05);
+}
+
+/* Estilo e posição da logo no canto */
+.topo-marca {
+  position: absolute; /* "Flutua" sobre o fundo */
+  top: 30px;
+  left: 40px;
+
+  /* Alinha a patinha e o texto */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.topo-marca img {
+  width: 50px;
+  height: 50px;
+}
+
+.topo-marca span {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.topo-marca p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.serviços {
+  background-color: #f8f8f8; /* Cor de fundo clara */
+  padding: 20px;
+
+  color: #3c184e;
+}
+.texto-serviços {
+  max-width: 60%; /* Largura máxima do texto */
+  margin: 0 auto; /* Centraliza o texto */
+  line-height: 30px;
+}
+.texto-serviços li {
+  margin-bottom: 10px;
+  font-size: 20px; /* Espaçamento entre os itens da lista */
+}
+.serviços h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  padding: 20px 0; /* Espaçamento interno */
+}
+.texto-serviços span {
+  font-weight: bold; /* Destaca o nome do serviço */
+}
+.redes-pai span {
+  font-weight: bold; /* Destaca o nome da marca */
+  color: white; /* Cor do texto */
+}
+.imagens-serviços {
+  /* Adicione estas 3 linhas para centralizar as imagens */
+  display: flex;
+  justify-content: center; /* Centraliza na horizontal */
+  align-items: center; /* Centraliza na vertical (caso o container tenha uma altura fixa) */
+  gap: 10px; /* Adiciona um espaço entre as imagens */
+  padding: 20px 0; /* Um espaçamento vertical para a seção */
+  flex-wrap: wrap; /* Permite que as imagens quebrem a linha em telas pequenas */
+  width: 80%; /* Largura do container de imagens */
+  max-width: 1000px; /* Largura máxima para manter as imagens organizadas */
+  margin: 0 auto; /* Centraliza o container de imagens */
+}
+
+/* O estilo para cada imagem individual */
+.imagens-serviços img {
+  width: 160px; /* Defina a largura e altura desejada */
+  height: 160px;
+  object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+.imagens-serviços img:hover {
+  transform: scale(1.08); /* Aumenta levemente a imagem */
+  box-shadow: 0 8px 24px rgba(60, 24, 78, 0.18); /* Sombra mais forte */
+}
+.redes-pai {
+  background-color: #3c184e; /* Cor do texto */
+  margin: 0 auto;
+  width: 100%;
+  background-size: cover;
+  height: 300px;
+}
+.redes-filhos {
+  display: flex; /* Exibe os ícones em linha */
+  justify-content: center; /* Centraliza os ícones na horizontal */
+  align-items: center; /* Centraliza os ícones na vertical */
+  flex-wrap: wrap; /* Permite que os ícones quebrem a linha em telas pequenas */
+  width: 80%; /* Largura do container de ícones */
+  max-width: 1000px; /* Largura máxima para manter os ícones organizados */
+  margin: 0 auto; /* Centraliza o container de ícones */
+}
+.redes-filhos img {
+  width: 80px;
+  height: 80px;
+  align-items: center; /* Centraliza os itens na vertical */
+  margin: 80px 30px; /* Espaçamento entre os ícones */
+  justify-content: center;
+}
+.redes-pai p {
+  color: white; /* Cor do texto */
+  text-align: center; /* Centraliza o texto */
+  padding: 30px 0; /* Espaçamento interno */
+  font-size: 30px;
+}
+/* =========================================== */
+/* === SEÇÃO NOSSAS MARCAS === */
+/* =========================================== */
+
+.marcas {
+  background-color: #f8f9fa; /* Fundo cinza claro suave */
+  padding: 60px 20px; /* Mais espaçamento vertical para a seção respirar */
+}
+
+.marcas p {
+  text-align: center;
+  font-size: 2.5rem; /* Tamanho do título (usando 'rem' para melhor acessibilidade) */
+  color: #3c184e;
+  margin-bottom: 40px; /* Mais espaço abaixo do título */
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+/* AQUI ESTÁ A MÁGICA DO FLEXBOX */
+.marcas-grid {
+  display: flex; /* Ativa o Flexbox */
+  flex-wrap: wrap; /* Permite que os itens quebrem a linha para formar a grade */
+  justify-content: center; /* Centraliza o grupo de logos na horizontal */
+  align-items: center; /* Centraliza as logos na vertical em cada linha */
+  gap: 30px; /* Cria um espaço consistente de 30px entre todas as logos */
+
+  /* Remove a altura fixa para que a seção se ajuste ao conteúdo */
+  max-width: 1200px; /* Largura máxima para o grid */
+  margin: 0 auto; /* Centraliza o próprio grid na página */
+}
+
+.marcas-grid img {
+  height: 150px; /* Altura da logo */
+  width: auto; /* Largura se ajusta para manter a proporção */
+  padding: 15px; /* Espaçamento interno para criar o efeito de "card" */
+  background: white; /* Fundo branco para o card */
+  border-radius: 8px; /* Bordas arredondadas */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08); /* Sombra mais suave */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efeito de transição suave */
+}
+
+.marcas-grid img:hover {
+  transform: translateY(-5px); /* Efeito de elevação ao passar o mouse */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12); /* Sombra mais forte no hover */
+}
+.localizacao {
+  background-color: #f8f9fa; /* Fundo cinza claro suave */
+  padding: 40px 20px; /* Espaçamento vertical para a seção respirar */
+}
+.localizacao h3 {
+  text-align: center;
+  font-size: 2.5rem; /* Tamanho do título (usando 'rem' para melhor acessibilidade) */
+  color: #3c184e;
+  margin-bottom: 20px; /* Espaço abaixo do título */
+  font-family: sans-serif;
+  font-weight: bold;
+}
+.mapa {
+  display: block;
+  margin: 0 auto;
+  width: 80%; /* Largura total do iframe */
+  height: 400px; /* Altura fixa para o mapa */
+  border: none; /* Remove a borda padrão do iframe */
+  border-radius: 10px; /* Bordas arredondadas para o mapa */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra suave para o mapa */
+}
+.footer {
+  background-color: #3c184e; /* Cor de fundo do rodapé */
+  color: white; /* Cor do texto do rodapé */
+  text-align: center; /* Centraliza o texto no rodapé */
+  padding: 20px 0; /* Espaçamento interno do rodapé */
+  font-size: 1.2rem; /* Tamanho da fonte do rodapé */
+}
