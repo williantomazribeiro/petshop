@@ -1,36 +1,19 @@
-/* =========================================== */
-/* === ESTILO DO CABEÇALHO (HERO SECTION) === */
-/* =========================================== */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  font-family: sans-serif; /* Cor padrão para o texto */
-}
-/* O container principal com a imagem de fundo */
 .hero-section {
-  /* Substitua pelo caminho correto da sua imagem de fundo */
   background-image: url("img/banner-topo.jpg");
-  background-size: cover; /* Faz a imagem cobrir todo o espaço */
-  background-position: center; /* Centraliza a imagem */
-  height: 100vh; /* Ocupa 100% da altura da tela */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 
-  /* Centraliza a caixa de conteúdo (.hero-content) */
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* Define como ponto de referência para a logo */
   position: relative;
-  color: #3c184e; /* Define uma cor padrão para os textos */
+  color: #3c184e;
 }
-
-/* A caixa de conteúdo branca e semi-transparente */
 .hero-content {
-  /* COR BRANCA COM 85% DE OPACIDADE */
   background-color: rgba(255, 255, 255, 0.85);
-  width: 80%; /* Largura de 80% da tela */
+  width: 80%;
   padding: 40px 60px;
   border-radius: 10px;
   text-align: center;
@@ -38,7 +21,6 @@
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo do título principal */
 .hero-content h1 {
   font-size: 2.5rem;
   margin-bottom: 30px;
@@ -146,7 +128,7 @@
   margin: 0 auto;
   width: 100%;
   background-size: cover;
-  height: 300px;
+  height: 200px;
 }
 .redes-filhos {
   display: flex; /* Exibe os ícones em linha */
@@ -161,13 +143,13 @@
   width: 80px;
   height: 80px;
   align-items: center; /* Centraliza os itens na vertical */
-  margin: 80px 30px; /* Espaçamento entre os ícones */
+  margin-left: 70px; /* Espaçamento entre os ícones */
   justify-content: center;
 }
 .redes-pai p {
   color: white; /* Cor do texto */
   text-align: center; /* Centraliza o texto */
-  padding: 30px 0; /* Espaçamento interno */
+  padding: 20px 0; /* Espaçamento interno */
   font-size: 30px;
 }
 /* =========================================== */
@@ -242,4 +224,84 @@
   text-align: center; /* Centraliza o texto no rodapé */
   padding: 20px 0; /* Espaçamento interno do rodapé */
   font-size: 1.2rem; /* Tamanho da fonte do rodapé */
+}
+
+@media (max-width: 768px) {
+  /* --- AJUSTES GERAIS DE FONTE --- */
+  .serviços h2 {
+    font-size: 32px;
+  }
+  .texto-serviços li {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .marcas p,
+  .localizacao h3 {
+    font-size: 2rem;
+  }
+  .redes-pai p {
+    font-size: 22px;
+    padding: 0 10px 0px 10px;
+  }
+
+  /* --- AJUSTES NO CABEÇALHO (HERO) --- */
+  .hero-content {
+    padding: 20px;
+    width: 90%; /* Ocupa mais espaço na tela do celular */
+  }
+  .hero-content h1 {
+    font-size: 1.8rem;
+  }
+  .topo-marca {
+    left: 20px;
+    top: 20px;
+    gap: 10px;
+  }
+  .topo-marca img {
+    width: 40px;
+    height: 40px;
+  }
+  .topo-marca span {
+    font-size: 18px;
+  }
+
+  /* --- AJUSTES NAS SEÇÕES DE IMAGENS E MARCAS --- */
+  .texto-serviços {
+    max-width: 90%; /* Permite que o texto ocupe mais a tela */
+  }
+  .imagens-serviços,
+  .marcas-grid {
+    width: 95%;
+    gap: 15px;
+  }
+  .imagens-serviços img {
+    width: 130px;
+    height: 130px;
+  }
+  .marcas-grid img {
+    height: 60px;
+    padding: 10px;
+  }
+
+  .redes-pai {
+    height: auto;
+    padding: 20px 0;
+  }
+  .redes-filhos {
+    gap: 25px;
+  }
+  .redes-filhos img {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+  }
+
+  .localizacao {
+    padding: 40px 0;
+  }
+  .mapa {
+    width: 100%;
+    height: 300px;
+    border-radius: 0;
+  }
 }
